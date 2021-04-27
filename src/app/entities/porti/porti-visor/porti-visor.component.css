@@ -1,0 +1,22 @@
+.contenedorporti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.porti {
+  width: 437px;
+  height: 550px;
+  text-align: center;
+}
+
+.porti img {
+  width: 437px;
+  height: 437px;
+}
+
+.porti p {
+  font-weight: bold;
+  font-size: 15px;
+}

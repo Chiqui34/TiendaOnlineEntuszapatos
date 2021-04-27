@@ -1,0 +1,13 @@
+<div class="contenedor">
+   <!--Zona de banners-->
+   <h1>{{tituloBanner}}</h1>
+   <app-banner-carousel [banners]='banners'></app-banner-carousel>
+
+   <!--Zona para ti-->
+   <h2>{{tituloPorTi | uppercase}}</h2>
+   <app-porti-visor [portis]='portis'></app-porti-visor>
+
+   <!--Zona Categorias-->
+   <h2>{{tituloCategorias  | uppercase}}</h2>
+   <app-categoria-visor [categorias]='categorias'></app-categoria-visor>
+</div>
