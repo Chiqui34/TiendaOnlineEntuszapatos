@@ -1,0 +1,28 @@
+h1 {
+  padding: 20px;
+}
+
+.listaCategoria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.categoria {
+  width: 400px;
+  height: 450px;
+}
+
+img {
+  width: 245px;
+  height: 290px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.btn {
+  background-color: #333333;
+}

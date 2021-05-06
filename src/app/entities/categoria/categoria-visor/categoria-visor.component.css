@@ -1,3 +1,7 @@
+a {
+  color: black;
+}
+
 .contenedorCategorias {
   display: flex;
   flex-wrap: wrap;
@@ -6,8 +10,8 @@
 }
 
 .categoria {
-  width: 275px;
-  height: 300px;
+  width: 245px;
+  height: 250px;
   text-align: center;
 }
 

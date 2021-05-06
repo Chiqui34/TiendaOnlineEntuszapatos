@@ -8,7 +8,7 @@ import { Porti } from '../porti.model';
 })
 export class PortiVisorComponent implements OnInit {
 
-  @Input() portis: Porti[] = [];
+  @Input() articulosPorti: Porti[] = [];
   constructor() { }
 
   ngOnInit(): void {

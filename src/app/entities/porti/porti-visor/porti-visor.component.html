@@ -1,6 +1,6 @@
 <div class="contenedorporti">
-   <div class="porti" *ngFor="let porti of portis">
-      <img src="{{porti.url}}" alt="{{porti.titulo}}">
-      <p>{{porti.titulo}}</p>
+   <div class="porti" *ngFor="let artporti of articulosPorti">
+      <img [src]="'data:image/jpeg;base64,' + artporti.imagen" alt="{{artporti.titulo}}"/>
+      <p>{{artporti.titulo}}</p>
    </div>
 </div>

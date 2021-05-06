@@ -13,24 +13,36 @@ import { PortiService } from '../entities/porti/porti.service';
 })
 export class HomeComponent implements OnInit {
 
+  //portis: Porti[] = [];
   banners: Banner[] = [];
-  portis: Porti[] = [];
   categorias: Categoria[] = [];
+
+  //////////////////////////////////////////////
+  articulosPorti: Porti[] = [];
 
   tituloBanner = "enTusZapatos, TU TIENDA ONLINE ";
   tituloPorTi = "Destacado para ti";
   tituloCategorias = "Nuestras ofertas";
 
   constructor(
-    private bannerService: BannerService,
-    private porTiService: PortiService,
-    private categoriaService: CategoriaService
+    //private porTiService: PortiService,
+    private bannerService: BannerService,    
+    private categoriaService: CategoriaService,
+
+    ///////////////////////////////////////////
+    private articulosPorTiService: PortiService
   ) { }
 
   ngOnInit(): void {
-    this.banners = this.bannerService.getBanners();
-    this.portis = this.porTiService.obtenerPorTi();
+    
+    //this.portis = this.porTiService.obtenerPorTi();
+    this.banners = this.bannerService.getBanners();    
     this.categorias = this.categoriaService.obtenerCategoria();
+
+    ///////////////////////////////////////////////
+    this.articulosPorTiService.obtenerArticulosPorTi().subscribe(
+        articulosPortiAsincronos => this.articulosPorti = articulosPortiAsincronos
+      );
   }
 
 }

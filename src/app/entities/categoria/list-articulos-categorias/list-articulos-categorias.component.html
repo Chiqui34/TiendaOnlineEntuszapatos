@@ -1,0 +1,14 @@
+<h1>Tus {{tituloCategoria}}</h1>
+
+<div class="listaCategoria">
+   <div class="categoria" *ngFor="let categoria of listaCategoria">
+      <div class="card" style="width: 18rem;">
+         <img src={{categoria.url}} class="card-img-top" alt="categoria.titulo">
+         <div class="card-body">
+            <h5 class="card-title">{{categoria.titulo}}</h5>
+            <p class="card-text">Precio: {{categoria.oferta}}</p>            
+         </div>
+         <a [routerLink]="['/detalleArticulo', categoria.titulo, categoria.url]" routerLinkActive="router-link-active"  class="btn btn-primary">Ver artículo</a>
+      </div>
+   </div>
+</div>

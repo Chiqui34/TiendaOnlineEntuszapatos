@@ -1,6 +1,8 @@
 <div class="contenedorCategorias">
    <div class="categoria" *ngFor="let categoria of categorias">
-      <img src="{{categoria.url}}" alt="{{categoria.titulo}}">
-      <p>{{categoria.oferta}}</p>
+      <a [routerLink]="['/listaCategoria', categoria.titulo]" routerLinkActive="router-link-active" >
+         <img src="{{categoria.url}}" alt="{{categoria.titulo}}">
+         <p>{{categoria.oferta}}</p>
+      </a>
    </div>
 </div>

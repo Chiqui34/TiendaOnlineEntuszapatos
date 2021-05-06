@@ -1,17 +1,17 @@
 .contenedor {
-  padding: 30px;
   text-align: center;
   font-family: nomTiendFont;
 }
 
 h1 {
+  margin-top: 30px;
   font-size: 26pt;
   text-align: center;
 }
 
 h2 {
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 25px;
   font-weight: bold;
 }
