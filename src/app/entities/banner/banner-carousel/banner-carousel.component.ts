@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Banner } from '../banner.model';
+//import { Banner } from '../banner.model';
+import { DiapositivaModel } from '../diapositiva-model';
 
 @Component({
   selector: 'app-banner-carousel',
@@ -8,7 +9,11 @@ import { Banner } from '../banner.model';
 })
 export class BannerCarouselComponent implements OnInit {
 
-  @Input() banners: Banner[] = [];
+  
+  @Input() diapositivasActivas: DiapositivaModel[] = [];
+  //@Input() banners: Banner[] = [];
+
+
   constructor() { }
   
 

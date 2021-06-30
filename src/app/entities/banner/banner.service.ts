@@ -1,14 +1,24 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Banner } from './banner.model';
+import { Observable } from 'rxjs';
+//import { Banner } from './banner.model';
+import { DiapositivaModel } from './diapositiva-model';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class BannerService {
+  
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
+    public obtenerDiapositiva(): Observable<DiapositivaModel[]> {
+    const urlEndPoint = "http://localhost:8080/api/diapositivas";
+    return this.http.get<DiapositivaModel[]>(urlEndPoint);
+  
+  }
 
-  public getBanners(): Banner[]{
+  /*public getBanners(): Banner[]{
 
     const banners: Banner[] = [];
     const banner01: Banner = new Banner('banner 01', '../../../assets/carousel/MainShop.jpg');
@@ -20,5 +30,6 @@ export class BannerService {
     banners.push(banner03);
 
     return banners;
-  }
+  }*/
+
 }

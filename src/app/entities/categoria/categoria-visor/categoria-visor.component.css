@@ -10,12 +10,11 @@ a {
 }
 
 .categoria {
-  width: 245px;
-  height: 250px;
+  width: 275px;
+  height: 350px;
   text-align: center;
 }
-
-.categoria img {
+s .categoria img {
   width: 275px;
   height: 275px;
 }

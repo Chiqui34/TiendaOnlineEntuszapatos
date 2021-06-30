@@ -1,7 +1,7 @@
 <ngb-carousel>
-   <ng-template ngbSlide *ngFor="let banner of banners">
+   <ng-template ngbSlide *ngFor="let diapositiva of diapositivasActivas">
       <div class="picsum-img-wrapper">
-         <img  src="{{banner.url}}" alt="{{banner.titulo}}">
+         <img  [src]="'data:image/jpeg;base64,' + diapositiva.imagen" alt="{{diapositiva.titulo}}">
       </div>
    </ng-template>
 </ngb-carousel>

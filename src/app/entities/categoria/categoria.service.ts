@@ -12,7 +12,7 @@ export class CategoriaService {
     
     const categoria: Categoria[] = [];
 
-    const categoria01: Categoria = new Categoria('Merceditas', '../../../assets/categorias/merceditasRojas.webp', 'Merceditas desde 10€');
+    const categoria01: Categoria = new Categoria('Merceditas', '../../../assets/categorias/merceditas.jpg', 'Merceditas desde 10€');
     const categoria02: Categoria = new Categoria('Botas', '../../../assets/categorias/womenBoots.jpg', 'Botas hasta -25%');
     const categoria03: Categoria = new Categoria('Sckeches', '../../../assets/categorias/sckeches.jpg', 'Skeches hasta -20%');
     const categoria04: Categoria = new Categoria('Zapatos de fiesta', '../../../assets/categorias/partyShoes.jpg', 'Zapatos para fiesta hasta 30%');
